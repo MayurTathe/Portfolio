@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 1,
     title: 'YouTube Clone',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description:'Build and deployed YouTube_Clone project. Used Tailwind CSS & Material UI icons. New Technology Learned: Tailwind CSS',
     image: '../YouTube.png', // Replace with actual image URL
     color: '#618264',
     projectUrl: 'https://github.com/MayurTathe/YouTube_Clone'
@@ -10,7 +10,7 @@ export const projects = [
   {
     id: 2,
     title: 'Portfolio',
-    description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    description: 'Self designed and developed a responsive Portfolio form Scratch. Used Farmer Motion and Tailwind CSS. New Technology Learned: Farmer Motion',
     image: 'EMS-R.png', // Replace with actual image URL
     color: '#164863',
     projectUrl: ""
