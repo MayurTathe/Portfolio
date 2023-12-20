@@ -36,7 +36,7 @@ const Cards = ({ title, description, color, image, projectUrl, i, progress, targ
               </p>
               <span className="flex items-center gap-2">
                 <a href={projectUrl} className="text-sm underline cursor-pointer">
-                  See more
+                  Visit
                 </a>
                 <svg
                   width="22"

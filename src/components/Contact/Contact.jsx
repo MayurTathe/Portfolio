@@ -34,7 +34,7 @@ const Contact = () => {
               <h2 className='mb-7'>Contact Info</h2>
               <div className="mb-8 text-white ">
                 <div className="flex items-center mb-2 space-x-2">
-                  <LocationOnOutlinedIcon className='' />
+                  <LocationOnOutlinedIcon className=''/>
                   <p className='font-semibold text-sm hover:scale-90' >Baner, Pune</p>
                 </div>
                 <div className="flex items-center mb-2 space-x-2">
@@ -47,12 +47,12 @@ const Contact = () => {
                 </div>
               </div>
               <div className="flex">
-                <a href="https://github.com/MayurTathe" target="_blank" rel="noopener noreferrer" className="mr-4">
+                <a href="https://github.com/MayurTathe" target="_blank" rel="noopener noreferrer" className="mr-4" title='GitHub'>
                   <MagnetEffect>
                     <GitHubIcon />
                   </MagnetEffect>
                 </a>
-                <a href="https://www.linkedin.com/in/mayur-tathe-221592276/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/mayur-tathe-221592276/" target="_blank" rel="noopener noreferrer" title='LinkedIn'>
                   <MagnetEffect>
                     <LinkedInIcon />
                   </MagnetEffect>
