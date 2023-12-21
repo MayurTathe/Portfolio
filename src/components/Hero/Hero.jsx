@@ -75,8 +75,8 @@ const Hero = () => {
 
                     {/* Left side - Text */}
                     <motion.div className="relative w-fit text-center md:text-left " initial={textVariants.initial} animate={textVariants.animate} transition={textVariants.trasition}>
-                        <h1 className="text-xl md:text-5xl font-semibold mt-12 p-1">SoftWare Engineer</h1>
-                        <p className="text-sm md:text-xl mt-4 p-1">
+                        <h1 className="text-xl md:text-5xl font-semibold mt-12 p-1">Software Engineer</h1>
+                        <p className="text-sm md:text-xl mt-4 p-1 bg-transparent/40">
                         Skilled in Full Stack Development with expertise in React, Angular, and Spring Boot. A fast learner, adept at adapting to new technologies quickly. Eager to contribute creativity and technical proficiency to dynamic and innovative projects in the IT sector.
                         </p>
                         <MagnetEffect classname={"relative bg-white text-gray-800 py-2 px-4 rounded-full text-sm mt-6 mx-3 hover:bg-transparent/10 hover:text-white"}>
