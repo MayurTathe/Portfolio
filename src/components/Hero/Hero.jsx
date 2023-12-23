@@ -45,22 +45,6 @@ const Hero = () => {
 
     };
 
-    const ref = useRef(null);
-    const [position, setPosition] = useState({ x: 0, y: 0 });
-
-    const mouseMove = (e) => {
-        const { clientX, clientY } = e;
-        const { width, height, top, left } = ref.current.getBoundingClientRect();
-        const x = clientX - (left + width / 2);
-        const y = clientY - (top + height / 2);
-        setPosition({ x, y });
-    };
-
-    const mouseLeave = (e) => {
-        setPosition({ x: 0, y: 0 });
-    };
-
-    const { x, y } = position;
 
     return (
         <div className="relative flex flex-col md:flex-row items-center h-screen overflow-hidden">
@@ -71,12 +55,12 @@ const Hero = () => {
                 className="absolute top-0 left-0 w-full -z-10 object-cover opacity-60 h-full"
             />
             <div className="container mx-auto text-white relative mt-20">
-                <div className="absolute flex flex-col md:flex-row md:justify-evenly items-center h-full w-full">
+                <div className="absolute flex flex-col md:flex-row md:justify-evenly  items-center h-full w-full">
 
                     {/* Left side - Text */}
-                    <motion.div className="relative w-fit text-center md:text-left " initial={textVariants.initial} animate={textVariants.animate} transition={textVariants.trasition}>
-                        <h1 className="text-xl md:text-5xl font-semibold mt-12 p-1">Software Engineer</h1>
-                        <p className="text-sm md:text-xl mt-4 p-1 bg-transparent/40">
+                    <motion.div className="relative w-fit text-center md:text-left p-2" initial={textVariants.initial} animate={textVariants.animate} transition={textVariants.trasition}>
+                        <h1 className="text-xl md:text-5xl lg:text-5xl font-semibold mt-12 p-2">Software Engineer</h1>
+                        <p className="text-sm md:text-xl lg:text-xl mt-4 p-2 bg-transparent/30 rounded">
                         Skilled in Full Stack Development with expertise in React, Angular, and Spring Boot. A fast learner, adept at adapting to new technologies quickly. Eager to contribute creativity and technical proficiency to dynamic and innovative projects in the IT sector.
                         </p>
                         <MagnetEffect classname={"relative bg-white text-gray-800 py-2 px-4 rounded-full text-sm mt-6 mx-3 hover:bg-transparent/10 hover:text-white"}>

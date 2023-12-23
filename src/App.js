@@ -7,6 +7,8 @@ import Cards from './components/Work/Cards';
 import { projects } from './components/Work/ProjectData';
 import { useRef } from 'react';
 import { useScroll } from 'framer-motion';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import AboutMe from './components/AboutMe/AboutMe';
 
 function App() {
 
@@ -17,8 +19,12 @@ function App() {
   })
 
   return (
+    <BrowserRouter>
     <div className='font-semibold text-2xl'>
       <section id='home' className='overflow-hidden'><Navbar /><Hero /></section>
+      <Routes>
+      <Route path='/aboute' element={<AboutMe/>} />
+      </Routes>
       <section id='about' className='flex items-center overflow-hidden' style={{ height: "50vh", backgroundColor: "#F7FBFC" }}><MotoQuote /></section>
 
       <main id='work' style={{ marginTop: "", backgroundColor: "#A2B29F" }} ref={ref}>
@@ -33,8 +39,11 @@ function App() {
 
       <section id='contact'><Contact /></section>
 
+      
 
     </div>
+    </BrowserRouter>
+
   );
 }
 

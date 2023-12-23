@@ -22,7 +22,7 @@ const MagnetEffect = ({ Name, classname, children }) => {
 
     return (
         <>
-            <motion.button className={classname} onMouseMove={mouseMove} onMouseLeave={mouseLeave} ref={ref} animate={{ x, y }} transition={{ type: "spring", stiffness: 150, damping: 15, mass: 0.1 }}>{Name}{children}</motion.button>
+            <motion.button className={classname} onClick={onclick} onMouseMove={mouseMove} onMouseLeave={mouseLeave} ref={ref} animate={{ x, y }} transition={{ type: "spring", stiffness: 150, damping: 15, mass: 0.1 }}>{Name}{children}</motion.button>
         </>
 
     )
