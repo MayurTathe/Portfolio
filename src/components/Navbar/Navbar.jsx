@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -30,9 +31,13 @@ const Navbar = () => {
         >
             <div className="flex-row ">
                 <div className="flex justify-between items-center">
-                    <motion.span className="text-lg font-semibold cursor-pointer italic hover:underline" initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 1 }} >@Code by Mayur</motion.span>
+                    <motion.span className="text-lg font-semibold cursor-pointer italic hover:underline" initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 1 }}>
+                        <Link to="/">
+                            @Code by Mayur
+                        </Link>
+                    </motion.span>
                     <div className="hidden md:flex space-x-5">
-                        <a href="#home" className={`${linkclass}`}>Home</a>
+                        <a href="#home" className={`${linkclass}`}>Home</a>  
                         <a href="#about" className={`${linkclass}`}>About</a>
                         <a href="#work" className={`${linkclass}`}>Work</a>
                         <a href="#contact" className={`${linkclass}`}>Contact</a>

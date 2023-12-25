@@ -25,12 +25,12 @@ const Cards = ({ title, description, color, image, projectUrl, i, progress, targ
       <div className={`cardContainer h-screen flex items-center justify-center sticky top-[0]`} ref={ref}>
         <motion.div
           style={{ scale: scale, backgroundColor: color, top: `calc(-5vh + ${i * 20}px)`, position: 'relative' }}
-          className={`card w-full max-w-2xl h-96 rounded-lg overflow-hidden flex flex-col p-12 transform origin-top}`}
+          className={`card w-full max-w-2xl rounded-lg overflow-hidden flex flex-col p-10 transform origin-top}`}
 
         >
           <h2 className="text-2xl font-semibold mb-4 text-center">{title}</h2>
-          <div className="bodyy flex h-full mt-8 gap-8">
-            <div className="description w-2/5 relative top-10">
+          <div className="bodyy h-full lg:mt-8 md:mt-8 sm:mt-8 gap-8 lg:flex md:flex">
+            <div className="description lg:w-2/5 md:w-2/5 relative md:top-10 lg:top-10">
               <p className="text-base">
                 {description}
               </p>
@@ -53,12 +53,12 @@ const Cards = ({ title, description, color, image, projectUrl, i, progress, targ
                 </svg>
               </span>
             </div>
-            <div className="imageContainer w-3/5 relative h-full rounded-lg overflow-hidden">
+            <div className="imageContainer lg:w-3/5 md:w-3/5 sm:w-3/5 mt-2 relative h-full rounded-lg overflow-hidden sm:mt-2 items-center content-center">
               <motion.div className="inner w-full h-full" style={{ scale: imageScale }}>
                 <img
                   src={image}
-                  alt="image"
-                  className="object-cover w-full h-full"
+                  alt=""
+                  className="object-cover w-fit h-fit"
                 />
               </motion.div>
             </div>
