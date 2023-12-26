@@ -18,14 +18,13 @@ const AboutMe = () => {
         />
       </div>
       <div className="mt-4">
-        <h2 className="text-3xl font-bold">Your Name</h2>
+        <h2 className="text-3xl font-bold">Mayur Tathe</h2>
         <p className="text-gray-600">Web Developer</p>
       </div>
       <div className="mt-8">
         <h3 className="text-xl font-bold mb-2">Introduction</h3>
         <p>
-          Hello! I'm a passionate web developer with a strong foundation in
-          front-end technologies.
+          Hello, I'm a passionate Full Stack Developer. Proficient in React JS, Angular, and Spring Boot, I've crafted projects like a dynamic YouTube Clone and a visually stunning portfolio. My knack for quick learning and adaptability makes me an asset to any tech team. Eager to bring my passion for coding and problem-solving to your organization. Let's build something great together.
         </p>
       </div>
       <div className="mt-8">
