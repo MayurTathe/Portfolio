@@ -13,7 +13,7 @@ const MotoQuote = () => {
     <div className="text-center p-8 justify-between md:flex" ref={containerRef}>
       <div className='text-center md:w-1/2'>
         <RevealScroll Yvalue={30}>
-          <p className='md:text-4xl font-semibold italic mt-5 p-5 lg:p-10 md:p-10'>Perfection may be elusive, but with every step forward, we edge closer.</p>
+          <p className='md:text-4xl font-log mt-5 p-5 lg:p-10 md:p-10'>Perfection may be elusive, but with every step forward, we edge closer.</p>
         </RevealScroll>
       </div>
       <div className='md:w-1/2'>

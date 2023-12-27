@@ -10,9 +10,9 @@ const AboutMe = () => {
       transition={{ duration: 0.6 }}
       className="p-4"
     >
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center mt-10">
         <img
-          src="/path-to-your-photo.jpg"
+          src="../ProfilePic.jpg"
           alt="Your Name"
           className="rounded-full h-32 w-32 object-cover"
         />

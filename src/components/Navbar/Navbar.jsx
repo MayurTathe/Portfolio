@@ -7,7 +7,7 @@ const Navbar = () => {
     const [prevScrollPos, setPrevScrollPos] = useState(0);
     const [visible, setVisible] = useState(true);
 
-    const linkclass = ["text-lg font-thin hover:bg-transparent/[.4] px-2 py-1 rounded-t"];
+    const linkclass = ["text-sm font-thin hover:bg-transparent/[.4] px-2 py-1 rounded-t"];
 
     const handleScroll = () => {
         const currentScrollPos = window.scrollY;
@@ -31,7 +31,7 @@ const Navbar = () => {
         >
             <div className="flex-row ">
                 <div className="flex justify-between items-center">
-                    <motion.span className="text-lg font-semibold cursor-pointer italic hover:underline" initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 1 }}>
+                    <motion.span className="text-xl font-log cursor-pointer italic hover:underline" initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 1 }}>
                         <Link to="/">
                             @Code by Mayur
                         </Link>

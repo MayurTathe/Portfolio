@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import MagnetEffect from '../AnimationEffect/MagnetEffect';
-import Contact from '../Contact/Contact';
-import MotoQuote from '../MotoQuote/MotoQuote';
 
 const Hero = () => {
 
@@ -61,15 +59,15 @@ const Hero = () => {
 
                         {/* Left side - Text */}
                         <motion.div className="relative w-fit text-center md:text-left p-2" initial={textVariants.initial} animate={textVariants.animate} transition={textVariants.trasition}>
-                            <h1 className="text-xl md:text-5xl lg:text-5xl font-semibold mt-12 p-2">Software Engineer</h1>
-                            <p className="text-sm md:text-xl lg:text-xl mt-4 p-2 bg-transparent/30 rounded">
+                            <h1 className="text-xl md:text-5xl lg:text-5xl font-semibold mt-12 p-2 font-titl">Software Engineer</h1>
+                            <p className="text-sm md:text-lg lg:text-lg mt-4 p-2 bg-transparent/30 rounded font-para">
                                 Skilled in Full Stack Development with expertise in React, Angular, and Spring Boot. A fast learner, adept at adapting to new technologies quickly. Eager to contribute creativity and technical proficiency to dynamic and innovative projects in the IT sector.
                             </p>
-                            <MagnetEffect classname={"relative bg-white text-gray-800 py-2 px-4 rounded-full text-sm mt-6 mx-3 hover:bg-transparent/10 hover:text-white"}>
+                            <MagnetEffect classname={"relative bg-white text-gray-800 py-2 px-4 rounded-full text-sm mt-6 mx-3 hover:bg-transparent/10 hover:text-white font-para"}>
                                 <a href="#about">Belief</a>
                             </MagnetEffect>
 
-                            <MagnetEffect classname={"relative bg-white text-gray-800 py-2 px-4 rounded-full text-sm mt-6 hover:bg-transparent/5 hover:text-white"}>
+                            <MagnetEffect classname={"relative bg-white text-gray-800 py-2 px-4 rounded-full text-sm mt-6 hover:bg-transparent/5 hover:text-white font-para"}>
                                 <a href="../MayurTathe_Resume.pdf" target='_blank'>Resume</a>
                             </MagnetEffect>
 
@@ -85,7 +83,7 @@ const Hero = () => {
                             />
                         </div>
                     </div>
-                    <motion.div className="opacity-40 xl:text-6xl md:text-4xl h-9 w-full hidden md:flex relative text-black top-56" variants={skillsVariants} initial="initial" animate="animate" transition={{ duration: 10, repeat: Infinity }}>React Angular SpringBoot Tailwind-CSS</motion.div>
+                    <motion.div className="opacity-40 font-para xl:text-6xl md:text-4xl h-9 w-full hidden md:flex relative text-black top-56" variants={skillsVariants} initial="initial" animate="animate" transition={{ duration: 10, repeat: Infinity }}>React Angular SpringBoot Tailwind-CSS</motion.div>
                 </div>
             </div>
 
