@@ -19,7 +19,7 @@ const MotoQuote = () => {
       <div className='md:w-1/2'>
 
         <RevealSideScroll xValue={50}>
-          <MagnetEffect classname={"text-lg mt-4 flex-row rounded-full bg-slate-600 w-44 h-44"}>
+          <MagnetEffect classname={"text-sm font-para mt-4 flex-row rounded-full bg-slate-600 w-44 h-44"}>
             <Link to="/aboute">About Me</Link>
           </MagnetEffect>
         </RevealSideScroll>

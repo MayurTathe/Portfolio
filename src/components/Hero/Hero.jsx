@@ -6,7 +6,7 @@ const Hero = () => {
 
     const [scrollY, setScrollY] = useState(0);
 
-    const parallaxOffset = scrollY * 0.5;
+    const parallaxOffset = scrollY * -0.1;
 
     const handleScroll = () => {
         setScrollY(window.scrollY);
@@ -51,7 +51,7 @@ const Hero = () => {
                 <img
                     src="../BGImage.jpg"
                     alt="Background"
-                    style={{ transform: `translateY(${parallaxOffset}px)` }}
+                    style={{ transform: `translateY(${parallaxOffset}px)` , position: "fixed"}}
                     className="absolute top-0 left-0 w-full -z-10 object-cover opacity-60 h-full"
                 />
                 <div className="container mx-auto text-white relative mt-20">
@@ -83,7 +83,7 @@ const Hero = () => {
                             />
                         </div>
                     </div>
-                    <motion.div className="opacity-40 font-para xl:text-6xl md:text-4xl h-9 w-full hidden md:flex relative text-black top-56" variants={skillsVariants} initial="initial" animate="animate" transition={{ duration: 10, repeat: Infinity }}>React Angular SpringBoot Tailwind-CSS</motion.div>
+                    <motion.div className="opacity-40 font-para xl:text-6xl md:text-4xl h-9 w-full hidden md:flex relative text-black top-56" variants={skillsVariants} initial="initial" animate="animate" transition={{ duration: 10, repeat: Infinity }}>React-JS Angular SpringBoot Tailwind-CSS</motion.div>
                 </div>
             </div>
 

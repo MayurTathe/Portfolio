@@ -28,13 +28,13 @@ const Cards = ({ title, description, color, image, projectUrl, i, progress, targ
           className={`card w-full max-w-2xl rounded-lg overflow-hidden flex flex-col p-10 transform origin-top}`}
 
         >
-          <h2 className="text-2xl font-semibold mb-4 text-center">{title}</h2>
+          <h2 className="text-2xl font-semibold font-para mb-4 text-center">{title}</h2>
           <div className="bodyy h-full lg:mt-8 md:mt-8 sm:mt-8 gap-8 lg:flex md:flex">
             <div className="description lg:w-2/5 md:w-2/5 relative md:top-10 lg:top-10">
-              <p className="text-base">
+              <p className="text-base font-para">
                 {description}
               </p>
-              <span className="flex items-center gap-2">
+              <span className="flex items-center gap-2 font-para">
                 <a href={projectUrl} className="text-sm underline cursor-pointer">
                   Visit
                 </a>
