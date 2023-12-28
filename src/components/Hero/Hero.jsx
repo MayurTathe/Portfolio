@@ -51,15 +51,15 @@ const Hero = () => {
                 <img
                     src="../BGImage.jpg"
                     alt="Background"
-                    style={{ transform: `translateY(${parallaxOffset}px)` , position: "fixed"}}
+                    style={{ transform: `translateY(${parallaxOffset}px)`, position: "fixed" }}
                     className="absolute top-0 left-0 w-full -z-10 object-cover opacity-60 h-full"
                 />
                 <div className="container mx-auto text-white relative mt-20">
-                    <div className="absolute flex flex-col md:flex-row md:justify-evenly  items-center h-full w-full">
+                    <div className="absolute flex flex-col md:flex-row md:justify-evenly items-center h-full w-full">
 
                         {/* Left side - Text */}
-                        <motion.div className="relative w-fit text-center md:text-left p-2" initial={textVariants.initial} animate={textVariants.animate} transition={textVariants.trasition}>
-                            <h1 className="text-xl md:text-5xl lg:text-5xl font-semibold mt-12 p-2 font-titl">Software Engineer</h1>
+                        <motion.div className="relative w-full text-center lg:text-left md:text-left p-2" initial={textVariants.initial} animate={textVariants.animate} transition={textVariants.trasition}>
+                            <h1 className="text-xl md:text-5xl lg:text-5xl font-semibold mt-12 p-2 font-titl">Mayur Tathe</h1>
                             <p className="text-sm md:text-lg lg:text-lg mt-4 p-2 bg-transparent/30 rounded font-para">
                                 Skilled in Full Stack Development with expertise in React, Angular, and Spring Boot. A fast learner, adept at adapting to new technologies quickly. Eager to contribute creativity and technical proficiency to dynamic and innovative projects in the IT sector.
                             </p>
@@ -86,15 +86,6 @@ const Hero = () => {
                     <motion.div className="opacity-40 font-para xl:text-6xl md:text-4xl h-9 w-full hidden md:flex relative text-black top-56" variants={skillsVariants} initial="initial" animate="animate" transition={{ duration: 10, repeat: Infinity }}>React-JS Angular SpringBoot Tailwind-CSS</motion.div>
                 </div>
             </div>
-
-            {/* <div id='about' className='absolute h-1/2 flex items-center overflow-hidden' style={{ backgroundColor: "#F7FBFC" }}><MotoQuote /></div> */}
-            {/* <div id='about' className=' h-screen' style={{ backgroundColor: "#F7FBFC" }}>
-                <div className="container mx-auto text-white relative mt-20">
-                    <MotoQuote />
-                </div>
-            </div>
-            <div id='contact' className='absolute w-full h-screen '><Contact /></div> */}
-
         </>
     );
 };
