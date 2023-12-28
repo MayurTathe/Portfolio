@@ -9,7 +9,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className='font-semibold text-2xl'>
-        <Navbar />
+        {/* <Navbar /> */}
         <Routes>
           <Route  path='/' element={<Home />}/>
           <Route exact path='/aboute' element={<AboutMe />} />
