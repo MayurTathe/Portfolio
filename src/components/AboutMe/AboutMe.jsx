@@ -12,11 +12,11 @@ const AboutMe = () => {
         <span className="text-xl font-logo cursor-pointer italic hover:underline">Portfolio</span>
       </div>
       <div className="">
-        <ul className="flex space-x-4 text-sm font-normal  cursor-pointer">
-          <li>Home</li>
-          <li>Skills</li>
-          <li>Education</li>
-          <li>Contact</li>
+        <ul className="flex space-x-4 text-sm font-normal">
+          <li className='cursor-pointer'>Home</li>
+          <li className='cursor-pointer'>Skills</li>
+          <li className='cursor-pointer'>Education</li>
+          <li className='cursor-pointer'>Contact</li>
         </ul>
       </div>
       </div>
