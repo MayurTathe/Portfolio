@@ -58,11 +58,35 @@ const AboutMe = () => {
           </div>
         </div>
       </motion.div>
-      <div className='mt-2 md:mt-6 h-screen w-full justify-center items-center flex p-4' style={{ backgroundColor: "#f1f1f1" }}>
+      <div className='mt-2 md:mt-6 h-[80vh] w-full justify-center items-center flex p-4' style={{ backgroundColor: "#f1f1f1" }}>
         <div className='font-titl text-5xl w-9/12 font-semibold'>
           <h1 className='font-titl text-xl md:text-5xl lg:text-5xl font-semibold mb-5'>Skills and Expertise</h1>
           <h1 className='font-para text-sm leading-7 mb-4'>I possess a diverse range of skills and expertise that sets me apart from others in the industry.</h1>
-          <div className="flex">Hello</div>
+          <div className="flex w-full justify-between">
+            <div className='font-para w-1/2'>
+              <h1 className='md:text-2xl'>Frontend Skills</h1>
+              <div className='font-para text-sm'>
+                <ul>
+                  <li>Hello</li>
+                  <li>Hello</li>
+                  <li>Hello</li>
+                  <li>Hello</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className='font-para w-1/2'>
+            <h1 className='md:text-2xl'>Backend Skills</h1>
+            <div className='font-para text-sm'>
+                <ol>
+                  <li>Hello</li>
+                  <li>Hello</li>
+                  <li>Hello</li>
+                  <li>Hello</li>
+                </ol>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>
