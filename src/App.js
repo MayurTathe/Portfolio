@@ -1,5 +1,4 @@
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import AboutMe from './components/AboutMe/AboutMe';
 import Home from './components/Home/Home';
@@ -15,7 +14,6 @@ function App() {
         </Routes>
       </div>
     </BrowserRouter>
-
   );
 }
 
