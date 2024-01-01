@@ -1,22 +1,31 @@
 // src/components/AboutMe.js
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import RevealScroll from '../AnimationEffect/RevealScroll';
+import { Link } from 'react-router-dom';
 
 const AboutMe = () => {
+
+  useEffect(() => {
+    // Scroll to the top of the page when the component mounts
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
+
   return (
     <>
       <nav className="p-4 h-24 items-center flex justify-center">
         <div className='flex justify-between items-center md:w-5/6'>
           <div className="text-left">
-            <span className="text-xl font-logo cursor-pointer italic hover:underline">Portfolio</span>
+            <Link to='/' className="text-xl font-logo cursor-pointer italic hover:underline">Portfolio</Link>
+            {/* <span className="text-xl font-logo cursor-pointer italic hover:underline">Portfolio</span> */}
           </div>
           <div className="">
             <ul className="md:flex space-x-4 text-sm font-normal hidden">
-              <li className='cursor-pointer'>Home</li>
-              <li className='cursor-pointer'>Skills</li>
-              <li className='cursor-pointer'>Education</li>
+              <li className='cursor-pointer'><a href='#skills'>Skills</a></li>
+              <li className='cursor-pointer'><a href='#edu'>Education</a></li>
+              {/* <li className='cursor-pointer'>Skills</li>
+              <li className='cursor-pointer'>Education</li> */}
               <li className='cursor-pointer'>Contact</li>
             </ul>
           </div>
@@ -46,20 +55,20 @@ const AboutMe = () => {
             <div className="w-full p-8 text-center leading-7">
               {/* Introduction Section (Right Side) */}
               <h1 className="md:text-5xl font-semibold font-titl mb-4">Introduction</h1>
-              <p className="text-gray-600 mb-4 text-sm font-para md:leading-7">
+              <p className="mb-4 text-sm font-para md:leading-7">
                 Greetings! I'm Mayur Tathe, a Full Stack Developer.  I specialize in crafting sleek frontends with React and Angular, and robust backends using Node.js and Java.
               </p>
-              <p className="text-gray-600 mb-4 text-sm font-para md:leading-7">
+              <p className="mb-4 text-sm font-para md:leading-7">
                 From responsive UIs to scalable server logic, I bring a holistic approach to development. Driven by a passion for turning ideas into reality through code.
               </p>
-              <p className="text-gray-600 text-sm font-para">
+              <p className="text-sm font-para">
                 Let's build something amazing together!
               </p>
             </div>
           </div>
         </div>
       </motion.div>
-      <div className='mt-2 md:mt-6 md:h-[80vh] h-[60vh] w-full justify-center items-center flex p-4' style={{ backgroundColor: "#f1f1f1" }}>
+      <div className='mt-2 md:mt-6 md:h-[80vh] h-[60vh] w-full justify-center items-center flex p-4' id='skills' style={{ backgroundColor: "#f1f1f1" }}>
         <div className='w-9/12'>
           <h1 className='md:text-5xl font-titl font-semibold mb-5'>Skills and Expertise</h1>
           <p className='font-para text-sm mb-4'>I possess a diverse range of skills and expertise that sets me apart from others in the industry.</p>
@@ -103,7 +112,7 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
-      <div className="h-screen">Hello</div>
+      <div className="h-screen" id='edu'>Hello</div>
     </>
   );
 };

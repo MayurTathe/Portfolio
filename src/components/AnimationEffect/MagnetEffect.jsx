@@ -6,6 +6,7 @@ const MagnetEffect = ({ Name, classname, children }) => {
     const ref = useRef(null);
     const [position, setPosition] = useState({ x: 0, y: 0 });
 
+
     const mouseMove = (e) => {
         const { clientX, clientY } = e;
         const { width, height, top, left } = ref.current.getBoundingClientRect();

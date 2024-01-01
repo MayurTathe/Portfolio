@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 
 import MagnetEffect from '../AnimationEffect/MagnetEffect';
 import RevealSideScroll from '../AnimationEffect/RevealSideScroll';
@@ -8,7 +8,6 @@ import { Link } from 'react-router-dom';
 const MotoQuote = () => {
 
   const containerRef = useRef(null);
-
   return (
     <div className="text-center p-8 justify-between md:flex" ref={containerRef}>
       <div className='text-center md:w-1/2'>

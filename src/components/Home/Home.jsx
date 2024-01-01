@@ -5,6 +5,7 @@ import Contact from '../Contact/Contact'
 import { projects } from '../Work/ProjectData'
 import Cards from '../Work/Cards'
 import { useScroll } from 'framer-motion'
+import Navbar from '../Navbar/Navbar'
 
 const Home = () => {
 
@@ -16,6 +17,7 @@ const Home = () => {
 
     return (
         <div>
+            <Navbar/>
             <section className='h-screen' id='home'><Hero /></section>
             <section className='flex items-center overflow-hidden' style={{ height: "50vh", backgroundColor: "#F7FBFC" }} id='about'><MotoQuote /></section>
             <main id='work' style={{ marginTop: "", backgroundColor: "#A2B29F" }} ref={ref}>
