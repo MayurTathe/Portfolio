@@ -59,7 +59,7 @@ const Hero = () => {
 
                         {/* Left side - Text */}
                         <motion.div className="relative w-full text-center lg:text-left md:text-left p-2" initial={textVariants.initial} animate={textVariants.animate} transition={textVariants.trasition}>
-                            <h1 className="text-xl md:text-5xl lg:text-5xl font-semibold mt-12 p-2 font-titl">Mayur Tathe</h1>
+                            <h1 className="md:text-5xl lg:text-5xl font-semibold mt-12 p-2 font-titl">Mayur Tathe</h1>
                             <p className="text-sm md:text-lg lg:text-lg mt-4 p-2 bg-transparent/30 rounded font-para">
                                 Skilled in Full Stack Development with expertise in React, Angular, and Spring Boot. A fast learner, adept at adapting to new technologies quickly. Eager to contribute creativity and technical proficiency to dynamic and innovative projects in the IT sector.
                             </p>

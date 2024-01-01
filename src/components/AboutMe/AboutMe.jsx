@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import RevealScroll from '../AnimationEffect/RevealScroll';
 
 const AboutMe = () => {
   return (
@@ -44,7 +45,7 @@ const AboutMe = () => {
           <div className='w-full h-fit md:h-full md:w-1/2 flex justify-center items-center' style={{ backgroundColor: "#f1f1f1" }}>
             <div className="w-full p-8 text-center leading-7">
               {/* Introduction Section (Right Side) */}
-              <h2 className="text-5xl font-semibold font-titl mb-4">Introduction</h2>
+              <h1 className="md:text-5xl font-semibold font-titl mb-4">Introduction</h1>
               <p className="text-gray-600 mb-4 text-sm font-para md:leading-7">
                 Greetings! I'm Mayur Tathe, a Full Stack Developer.  I specialize in crafting sleek frontends with React and Angular, and robust backends using Node.js and Java.
               </p>
@@ -58,37 +59,51 @@ const AboutMe = () => {
           </div>
         </div>
       </motion.div>
-      <div className='mt-2 md:mt-6 h-[80vh] w-full justify-center items-center flex p-4' style={{ backgroundColor: "#f1f1f1" }}>
-        <div className='font-titl text-5xl w-9/12 font-semibold'>
-          <h1 className='font-titl text-xl md:text-5xl lg:text-5xl font-semibold mb-5'>Skills and Expertise</h1>
-          <h1 className='font-para text-sm leading-7 mb-4'>I possess a diverse range of skills and expertise that sets me apart from others in the industry.</h1>
+      <div className='mt-2 md:mt-6 md:h-[80vh] h-[60vh] w-full justify-center items-center flex p-4' style={{ backgroundColor: "#f1f1f1" }}>
+        <div className='w-9/12'>
+          <h1 className='md:text-5xl font-titl font-semibold mb-5'>Skills and Expertise</h1>
+          <p className='font-para text-sm mb-4'>I possess a diverse range of skills and expertise that sets me apart from others in the industry.</p>
           <div className="flex w-full justify-between">
-            <div className='font-para w-1/2'>
-              <h1 className='md:text-2xl'>Frontend Skills</h1>
-              <div className='font-para text-sm'>
-                <ul>
-                  <li>Hello</li>
-                  <li>Hello</li>
-                  <li>Hello</li>
-                  <li>Hello</li>
+            <div className='font-para w-1/3'>
+              <h1 className='md:text-2xl text-[17px]'>Frontend Skills</h1>
+              <RevealScroll classname='font-para text-sm mt-3 pl-5' Yvalue={30}>
+                <ul className='list-disc leading-5'>
+                  <li>React Js</li>
+                  <li>Angular</li>
+                  <li>HTML</li>
+                  <li>CSS & Tailwind CSS</li>
+                  <li>Java Script</li>
                 </ul>
-              </div>
+              </RevealScroll>
             </div>
 
-            <div className='font-para w-1/2'>
-            <h1 className='md:text-2xl'>Backend Skills</h1>
-            <div className='font-para text-sm'>
-                <ol>
-                  <li>Hello</li>
-                  <li>Hello</li>
-                  <li>Hello</li>
-                  <li>Hello</li>
-                </ol>
-              </div>
+            <div className='font-para w-1/3'>
+              <h1 className='md:text-2xl text-[17px]'>Backend Skills</h1>
+              <RevealScroll classname='font-para text-sm mt-3 pl-5' Yvalue={30}>
+                <ul className='list-disc leading-5'>
+                  <li>Node Js</li>
+                  <li>Type Script</li>
+                  <li>Java</li>
+                  <li>Spring Boot</li>
+                </ul>
+              </RevealScroll>
+            </div>
+            <div className='font-para w-1/3'>
+              <h1 className='md:text-2xl text-[17px]'>Other Skills</h1>
+               <RevealScroll classname='font-para text-sm mt-3 pl-5' Yvalue={30}>
+                <ul className='list-disc leading-5'>
+                  <li>Git</li>
+                  <li>MySQL</li>
+                  <li>Mongo DB</li>
+                  <li>Farmer Motion</li>
+                  <li>Creative Animations</li>
+                </ul>
+              </RevealScroll>
             </div>
           </div>
         </div>
       </div>
+      <div className="h-screen">Hello</div>
     </>
   );
 };

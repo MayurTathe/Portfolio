@@ -1,7 +1,7 @@
 import { useInView, motion, useAnimation } from 'framer-motion'
 import React, { useEffect, useRef } from 'react'
 
-const RevealScroll = ({ children, Yvalue }) => {
+const RevealScroll = ({ children, Yvalue, classname }) => {
 
     const controls = useAnimation();
     const ref = useRef(null);
@@ -22,7 +22,7 @@ const RevealScroll = ({ children, Yvalue }) => {
 
     return (
 
-        <motion.div className="overflow-hidden" ref={ref} initial="hidden" animate={controls} variants={variants} transition={{ duration: 0.7, delay: 0.25, staggerChildren: 0.7 }}>
+        <motion.div className={classname} ref={ref} initial="hidden" animate={controls} variants={variants} transition={{ duration: 0.7, delay: 0.25, staggerChildren: 0.7 }}>
             {children}
         </motion.div>
     )

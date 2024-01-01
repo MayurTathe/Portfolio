@@ -19,7 +19,7 @@ const Home = () => {
             <section className='h-screen' id='home'><Hero /></section>
             <section className='flex items-center overflow-hidden' style={{ height: "50vh", backgroundColor: "#F7FBFC" }} id='about'><MotoQuote /></section>
             <main id='work' style={{ marginTop: "", backgroundColor: "#A2B29F" }} ref={ref}>
-                <div className="text-center font-titl font-semibold absolute w-full  mt-10 overflow-y-hidden lg:text-4xl md:text-4xl text-xl">Projects</div>
+                <div className="text-center font-titl font-semibold absolute w-full mt-10 overflow-y-hidden lg:text-4xl md:text-4xl">Projects</div>
                 {
                     projects.map((project, index) => {
                         const targetScale = 1 - ((projects.length - index) * 0.05);
