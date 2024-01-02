@@ -3,13 +3,14 @@
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import RevealScroll from '../AnimationEffect/RevealScroll';
+import RevealSideScroll from '../AnimationEffect/RevealSideScroll';
 import { Link } from 'react-router-dom';
 
 const AboutMe = () => {
 
   useEffect(() => {
     // Scroll to the top of the page when the component mounts
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    // window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);
 
   return (
@@ -99,7 +100,7 @@ const AboutMe = () => {
             </div>
             <div className='font-para w-1/3'>
               <h1 className='md:text-2xl text-[17px]'>Other Skills</h1>
-               <RevealScroll classname='font-para text-sm mt-3 pl-5' Yvalue={30}>
+              <RevealScroll classname='font-para text-sm mt-3 pl-5' Yvalue={30}>
                 <ul className='list-disc leading-5'>
                   <li>Git</li>
                   <li>MySQL</li>
@@ -112,7 +113,43 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
-      <div className="h-screen" id='edu'>Hello</div>
+      <div className='mt-2 md:mt-6 md:h-[90vh] h-[fit] w-full justify-center items-center flex p-4' id='edu'>
+        <div className='w-9/12'>
+          <h1 className='md:text-5xl font-titl font-semibold mb-5'>Education</h1>
+          <p className='font-para text-sm mb-4'>I am a lifelong learner and have obtained a solid educational background to support my expertise.</p>
+          <div className='font-para w-[90%] mb-4 p-5 flex-col justify-between shadow-lg' style={{ backgroundColor: "#f1f1f1" }}>
+            <div className='w-[full]'>
+              <h1 className='md:text-2xl text-[17px] font-para'>Advance Diploma in Full Stack Development</h1>
+              <p className='font-para text-sm mt-3'>Nov 2022 - Aug 2023</p>
+              <p className='font-para text-sm mt-2'>
+                A deep dive into the world of coding alchemy. I completed these professional course from the SEED Infotech Institute 
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-col md:flex-row md:w-full w-[90%] justify-between">
+            <div className='md:w-1/2 mb-4'>
+              <RevealSideScroll classname='font-para md:w-[80%] w-full rounded justify-center flex-col p-5 shadow-lg bg-[#f1f1f1]' xValue={-50}>
+                <h1 className='md:text-2xl text-[17px] font-para'>Bachelor's Degree</h1>
+                <p className='font-para text-sm mt-3'>Aug 2019 - Aug 2022 ||  First Class Distinction</p>
+                <p className='font-para text-sm mt-2'>
+                  I graduated with a degree in Mechanical Enginnering from a prestigious university called SPPU. My academic journey was a blend of mastering the mechanics of machines and cultivating a mindset of continuous problem-solving and adapting new tech.
+                </p>
+              </RevealSideScroll>
+            </div>
+            <div className='md:w-1/2 mb-4'>
+              <RevealSideScroll classname='font-para md:w-[80%] w-full rounded justify-center flex-col p-5 shadow-lg bg-[#f1f1f1]' xValue={50}>
+                <h1 className='md:text-2xl text-[17px] font-para'>Diploma</h1>
+                <p className='font-para text-sm mt-3'>Jul 2016 - Jun 2019 ||  First Class</p>
+                <p className='font-para text-sm mt-2'>
+                  I have completed my Diploma in Mechanical Enginnering. A hands-on immersion in the fundamentals of mechanics and design. This program honed my practical skills, providing a solid foundation for real-world problem-solving.
+                </p>
+              </RevealSideScroll>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div className='h-screen'>Hello</div>
     </>
   );
 };
