@@ -1,10 +1,12 @@
-// src/components/AboutMe.js
-
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import RevealScroll from '../AnimationEffect/RevealScroll';
 import RevealSideScroll from '../AnimationEffect/RevealSideScroll';
 import { Link } from 'react-router-dom';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { ArrowUpward } from '@mui/icons-material';
+
 
 const AboutMe = () => {
 
@@ -19,15 +21,12 @@ const AboutMe = () => {
         <div className='flex justify-between items-center md:w-5/6'>
           <div className="text-left">
             <Link to='/' className="text-xl font-logo cursor-pointer italic hover:underline">Portfolio</Link>
-            {/* <span className="text-xl font-logo cursor-pointer italic hover:underline">Portfolio</span> */}
           </div>
           <div className="">
             <ul className="md:flex space-x-4 text-sm font-normal hidden">
               <li className='cursor-pointer'><a href='#skills'>Skills</a></li>
               <li className='cursor-pointer'><a href='#edu'>Education</a></li>
-              {/* <li className='cursor-pointer'>Skills</li>
-              <li className='cursor-pointer'>Education</li> */}
-              <li className='cursor-pointer'>Contact</li>
+              <li className='cursor-pointer'><a href='#contact'>Contact</a></li>
             </ul>
           </div>
         </div>
@@ -107,6 +106,7 @@ const AboutMe = () => {
                   <li>Mongo DB</li>
                   <li>Farmer Motion</li>
                   <li>Creative Animations</li>
+                  <li>Continuous Learning</li>
                 </ul>
               </RevealScroll>
             </div>
@@ -122,7 +122,7 @@ const AboutMe = () => {
               <h1 className='md:text-2xl text-[17px] font-para'>Advance Diploma in Full Stack Development</h1>
               <p className='font-para text-sm mt-3'>Nov 2022 - Aug 2023</p>
               <p className='font-para text-sm mt-2'>
-                A deep dive into the world of coding alchemy. I completed these professional course from the SEED Infotech Institute 
+                A deep dive into the world of coding alchemy. I completed this professional course at the SEED Infotech Institute — a comprehensive exploration into crafting digital experiences, seamlessly blending frontend finesse with backend robustness. This course has helped me stand strong in the ever-changing world of technology.
               </p>
             </div>
           </div>
@@ -132,7 +132,7 @@ const AboutMe = () => {
                 <h1 className='md:text-2xl text-[17px] font-para'>Bachelor's Degree</h1>
                 <p className='font-para text-sm mt-3'>Aug 2019 - Aug 2022 ||  First Class Distinction</p>
                 <p className='font-para text-sm mt-2'>
-                  I graduated with a degree in Mechanical Enginnering from a prestigious university called SPPU. My academic journey was a blend of mastering the mechanics of machines and cultivating a mindset of continuous problem-solving and adapting new tech.
+                  I graduated with a degree in Mechanical Engineering from the prestigious Savitribai Phule Pune University (SPPU). My academic journey was a blend of mastering the mechanics of machines and cultivating a mindset of continuous problem-solving, along with adapting to new technologies.
                 </p>
               </RevealSideScroll>
             </div>
@@ -141,15 +141,26 @@ const AboutMe = () => {
                 <h1 className='md:text-2xl text-[17px] font-para'>Diploma</h1>
                 <p className='font-para text-sm mt-3'>Jul 2016 - Jun 2019 ||  First Class</p>
                 <p className='font-para text-sm mt-2'>
-                  I have completed my Diploma in Mechanical Enginnering. A hands-on immersion in the fundamentals of mechanics and design. This program honed my practical skills, providing a solid foundation for real-world problem-solving.
+                  I have completed my Diploma in Mechanical Engineering, which involved a hands-on immersion in the fundamentals of mechanics and design. This program honed my practical skills, providing a solid foundation for real-world problem-solving.
                 </p>
               </RevealSideScroll>
             </div>
           </div>
-
         </div>
+        <div className='justify-end items-end flex flex-col h-full w-fit sm:bottom-1'><button onClick={ () => window.scrollTo({ top: 0, behavior: 'smooth' })}><ArrowUpward /></button></div>
       </div>
-      <div className='h-screen'>Hello</div>
+      <footer className="p-4 text-center mt-4" id='contact'>
+        <p className="text-sm font-para mt-2">mayurtathe02@gmail.com | (+91) 7768852561 </p>
+        <div className="mt-2 mb-2">
+          <a href="https://github.com/MayurTathe" target="_blank" rel="noopener noreferrer" className="mr-4" title='GitHub'>
+            <GitHubIcon />
+          </a>
+          <a href="https://www.linkedin.com/in/mayur-tathe-221592276/" target="_blank" rel="noopener noreferrer" title='LinkedIn'>
+            <LinkedInIcon />
+          </a>
+        </div>
+        <p className="text-sm font-para mb-2 mt-5">&copy; 2024 Mayur Tathe. All rights reserved.</p>
+      </footer>
     </>
   );
 };
