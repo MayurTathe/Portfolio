@@ -12,7 +12,7 @@ const AboutMe = () => {
 
   useEffect(() => {
     // Scroll to the top of the page when the component mounts
-    // window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);
 
   return (
@@ -147,7 +147,7 @@ const AboutMe = () => {
             </div>
           </div>
         </div>
-        <div className='justify-end items-end flex flex-col h-full w-fit sm:bottom-1'><button onClick={ () => window.scrollTo({ top: 0, behavior: 'smooth' })}><ArrowUpward /></button></div>
+        <div className='justify-end items-end flex flex-col h-full w-fit'><button onClick={ () => window.scrollTo({ top: 0, behavior: 'smooth' })}><ArrowUpward /></button></div>
       </div>
       <footer className="p-4 text-center mt-4" id='contact'>
         <p className="text-sm font-para mt-2">mayurtathe02@gmail.com | (+91) 7768852561 </p>
