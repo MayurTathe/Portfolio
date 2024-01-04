@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 
 import MagnetEffect from '../AnimationEffect/MagnetEffect';
 import RevealSideScroll from '../AnimationEffect/RevealSideScroll';
@@ -9,6 +9,7 @@ const MotoQuote = () => {
 
   const containerRef = useRef(null);
   return (
+
     <div className="text-center p-8 justify-between md:flex" ref={containerRef}>
       <div className='text-center md:w-1/2'>
         <RevealScroll classname={"overflow-hidden"} Yvalue={30}>
@@ -16,15 +17,12 @@ const MotoQuote = () => {
         </RevealScroll>
       </div>
       <div className='md:w-1/2'>
-
         <RevealSideScroll xValue={50}>
           <MagnetEffect classname={"text-sm font-para mt-4 flex-row rounded-full bg-slate-600 w-44 h-44"}>
             <Link to="/aboute">About Me</Link>
           </MagnetEffect>
         </RevealSideScroll>
-
       </div>
-
     </div>
   )
 }

@@ -34,7 +34,7 @@ const Contact = () => {
               <h2 className='mb-7 font-titl font-semibold '>Contact Info</h2>
               <div className="mb-8 text-white ">
                 <div className="flex items-center mb-2 space-x-2">
-                  <LocationOnOutlinedIcon className=''/>
+                  <LocationOnOutlinedIcon className='' />
                   <p className='font-thin text-sm hover:scale-90 font-para' >Baner, Pune</p>
                 </div>
                 <div className="flex items-center mb-2 space-x-2">

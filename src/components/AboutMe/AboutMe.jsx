@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import RevealScroll from '../AnimationEffect/RevealScroll';
 import RevealSideScroll from '../AnimationEffect/RevealSideScroll';
@@ -7,8 +7,12 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { ArrowUpward } from '@mui/icons-material';
 
-
 const AboutMe = () => {
+
+    const [isOpen, setIsOpen] = useState(false);
+  
+    const toggleNavbar = () => {
+      setIsOpen(!isOpen);};
 
   useEffect(() => {
     // Scroll to the top of the page when the component mounts
@@ -17,7 +21,7 @@ const AboutMe = () => {
 
   return (
     <>
-      <nav className="p-4 h-24 items-center flex justify-center">
+      {/* <nav className="p-4 h-24 items-center flex justify-center">
         <div className='flex justify-between items-center md:w-5/6'>
           <div className="text-left">
             <Link to='/' className="text-xl font-logo cursor-pointer italic hover:underline">Portfolio</Link>
@@ -30,7 +34,42 @@ const AboutMe = () => {
             </ul>
           </div>
         </div>
-      </nav>
+      </nav> */}
+ <nav className="bg-gray-800 p-4">
+      <div className="flex items-center justify-between">
+        <div className="text-white text-lg font-semibold">Your Logo</div>
+        <button
+          className="text-white focus:outline-none lg:hidden"
+          onClick={toggleNavbar}
+        >
+          {/* Hamburger Icon */}
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      {/* Mobile Menu */}
+      {isOpen && (
+        <div className="mt-4">
+          <a href="#" className="block text-white py-2">Home</a>
+          <a href="#" className="block text-white py-2">About</a>
+          <a href="#" className="block text-white py-2">Services</a>
+          <a href="#" className="block text-white py-2">Contact</a>
+        </div>
+      )}
+    </nav>
+
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -147,7 +186,7 @@ const AboutMe = () => {
             </div>
           </div>
         </div>
-        <div className='justify-end items-end flex flex-col h-full w-fit'><button onClick={ () => window.scrollTo({ top: 0, behavior: 'smooth' })}><ArrowUpward /></button></div>
+        <div className='justify-end items-end flex flex-col h-full w-fit'><button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}><ArrowUpward /></button></div>
       </div>
       <footer className="p-4 text-center mt-4" id='contact'>
         <p className="text-sm font-para mt-2">mayurtathe02@gmail.com | (+91) 7768852561 </p>

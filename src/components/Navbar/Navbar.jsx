@@ -25,6 +25,7 @@ const Navbar = () => {
     }, [prevScrollPos, visible]);
 
     return (
+        <>
         <nav
             className={`fixed w-full top-0 transition-transform duration-300 ${visible ? 'translate-y-0' : '-translate-y-full'
                 } z-10 bg-transparent/[0.2] p-4 text-white`}
@@ -37,13 +38,22 @@ const Navbar = () => {
                         </Link>
                     </motion.span>
                     <div className="hidden md:flex space-x-5">
-                        <a href="#home" className={`${linkclass}`}>Home</a>  
+                        <a href="#home" className={`${linkclass}`}>Home</a>
                         <a href="#about" className={`${linkclass}`}>About</a>
                         <a href="#work" className={`${linkclass}`}>Work</a>
                         <a href="#contact" className={`${linkclass}`}>Contact</a>
                     </div>
-                    <div className="md:hidden">
+                    
+                </div>
+            </div>
+        </nav>
+        <div className="md:hidden">
                         {/* Hamburger menu for small screens */}
+                        <div className='flex-col top-0 right-0 h-screen w-52 fixed items-center'>
+                        <a href="#home" className={`${linkclass}`}>Home</a>
+                        <a href="#about" className={`${linkclass}`}>About</a>
+                        <a href="#work" className={`${linkclass}`}>Work</a>
+                        <a href="#contact" className={`${linkclass}`}>Contact</a>
                         <button className="text-white focus:outline-none">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -60,10 +70,9 @@ const Navbar = () => {
                                 />
                             </svg>
                         </button>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </nav>
+          </>
     )
 }
 

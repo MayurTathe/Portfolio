@@ -1,21 +1,13 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
 const Cards = ({ title, description, color, image, projectUrl, i, progress, targetScale, range }) => {
-
-  const topPosition = `calc(-10vh + ${i * 20}px)`;
 
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ['start end', 'start start'],
   })
-
-  useEffect(() => {
-    console.log('topPosition', topPosition);
-    console.log('scrollYProgress', scrollYProgress);
-
-  }, [topPosition, scrollYProgress]);
 
   const imageScale = useTransform(scrollYProgress, [0, 1], [2, 1]);
   const scale = useTransform(progress, range, [1, targetScale]);
@@ -26,7 +18,6 @@ const Cards = ({ title, description, color, image, projectUrl, i, progress, targ
         <motion.div
           style={{ scale: scale, backgroundColor: color, top: `calc(-5vh + ${i * 20}px)`, position: 'relative' }}
           className={`card w-full max-w-2xl rounded-lg overflow-hidden flex flex-col p-10 transform origin-top}`}
-
         >
           <h2 className="text-xl md:text-2xl font-semibold font-para mb-4 text-center">{title}</h2>
           <div className="bodyy h-full lg:mt-8 md:mt-8 sm:mt-8 gap-8 lg:flex md:flex">
@@ -57,7 +48,7 @@ const Cards = ({ title, description, color, image, projectUrl, i, progress, targ
               <motion.div className="inner w-full h-full" style={{ scale: imageScale }}>
                 <img
                   src={image}
-                  alt=""
+                  alt="Project Img"
                   className="object-cover w-fit h-fit"
                 />
               </motion.div>

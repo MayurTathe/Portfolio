@@ -74,10 +74,9 @@ const Hero = () => {
                         </motion.div>
 
                         {/* Right side - Image */}
-                        {/* <div className="relative md:w-3/4 md:mt-0 w-3/4 lg:w-3/4  justify-between items-center text-center content-center"> */}
                         <div className="relative md:w-fit content-center justify-center">
                             <img
-                                src="../ProfilePic(1)3.png"
+                                src="../ProfilePic.png"
                                 alt="Your Profile"
                                 className=""
                             />
