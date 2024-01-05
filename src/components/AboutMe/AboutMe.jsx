@@ -21,7 +21,7 @@ const AboutMe = () => {
 
   return (
     <>
-      {/* <nav className="p-4 h-24 items-center flex justify-center">
+      <nav className="p-4 h-24 items-center flex justify-center">
         <div className='flex justify-between items-center md:w-5/6'>
           <div className="text-left">
             <Link to='/' className="text-xl font-logo cursor-pointer italic hover:underline">Portfolio</Link>
@@ -34,15 +34,15 @@ const AboutMe = () => {
             </ul>
           </div>
         </div>
-      </nav> */}
- <nav className="bg-gray-800 p-4">
+      </nav>
+ {/* <nav className="bg-gray-800 p-4">
       <div className="flex items-center justify-between">
         <div className="text-white text-lg font-semibold">Your Logo</div>
         <button
           className="text-white focus:outline-none lg:hidden"
           onClick={toggleNavbar}
         >
-          {/* Hamburger Icon */}
+          Hamburger Icon
           <svg
             className="w-6 h-6"
             fill="none"
@@ -59,7 +59,7 @@ const AboutMe = () => {
           </svg>
         </button>
       </div>
-      {/* Mobile Menu */}
+      Mobile Menu
       {isOpen && (
         <div className="mt-4">
           <a href="#" className="block text-white py-2">Home</a>
@@ -68,7 +68,7 @@ const AboutMe = () => {
           <a href="#" className="block text-white py-2">Contact</a>
         </div>
       )}
-    </nav>
+    </nav> */}
 
       <motion.div
         initial={{ opacity: 0 }}
