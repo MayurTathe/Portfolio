@@ -17,7 +17,7 @@ const Contact = () => {
     const message = document.getElementById('floating_message').value;
     const emailId = "mayurtathe02@gmail.com";
 
-    const mailToLink = `mailto:${emailId}?subject: ${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}%0D%0ACompany: ${company}%0D%0APhone: ${number}%0D%0AMessage: ${message}`)}`;
+    const mailToLink = `mailto:${emailId}?subject: ${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nCompany: ${company}\nPhone: ${number}\nMessage: ${message}`)}`;
     console.log('MailToLink: ', { name, company, subject, number, message, emailId });
     window.location.href = mailToLink;
   }
@@ -30,7 +30,7 @@ const Contact = () => {
         <div className=' h-screen md:w-1/2  items-center justify-center flex' style={{ backgroundColor: "#ADC4CE" }}>
 
           <RevealSideScroll xValue={-100} classname={"md:h-3/5 lg:h-3/5 lg:w-1/2 md:w-3/5 lg:top-0 md:top-0 top-1/3 w-screen h-1/3 z-50 relative"} style={{ backgroundColor: "#016A70" }}>
-            <div className="h-full w-full flex flex-col justify-center items-center" style={{ backgroundColor: "#016A70" }}>
+            <div className="md:h-full h-full w-full flex flex-col justify-center items-center" style={{ backgroundColor: "#016A70" }}>
               <h2 className='mb-7 font-titl font-semibold '>Contact Info</h2>
               <div className="mb-8 text-white ">
                 <div className="flex items-center mb-2 space-x-2">
@@ -52,7 +52,7 @@ const Contact = () => {
                     <GitHubIcon />
                   </MagnetEffect>
                 </a>
-                <a href="https://www.linkedin.com/in/mayur-tathe-221592276/" target="_blank" rel="noopener noreferrer" title='LinkedIn'>
+                <a href="https://www.linkedin.com/in/mayur-tathe-221592276" target="_blank" rel="noopener noreferrer" title='LinkedIn'>
                   <MagnetEffect>
                     <LinkedInIcon />
                   </MagnetEffect>
@@ -67,7 +67,7 @@ const Contact = () => {
         <div className='h-screen w-1/2' style={{ backgroundColor: "#016A70" }}></div>
 
         <div className="absolute bg-slate-200 md:w-4/6 w-5/6 z-10 -mt-20 md:mt-0" style={{ height: "70%" }}>
-          <div className="h-full bg-white md:w-3/5 w-4/6 float-right text-black p-3 items-center flex-col justify-between overflow-hidden">
+          <div className="h-full bg-white md:w-3/5 w-[70%] float-right text-black p-3 items-center flex-col justify-between overflow-hidden">
             <h2 className='text-center mt-1 font-titl font-semibold'>Send a Message</h2>
             <div className="relative z-0 w-full mb-5 sm:mt-7 md:mt-4">
               <input type="text" name="floating_full_name" id="floating_full_name" className="font-para block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
