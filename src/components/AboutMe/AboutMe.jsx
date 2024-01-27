@@ -78,8 +78,8 @@ const AboutMe = () => {
         className="flex p-4 w-full justify-center md:h-[80vh]"
       >
         <div className='w-11/12 lg:flex md:flex flex-1 overflow-hidden h-full'>
-          <div className="w-full md:w-1/2 h-full">
-            {/* Video Section (Left Side) */}
+          {/* <div className="w-full md:w-1/2 h-full">
+            {/* Video Section (Left Side) 
             <div className="aspect-w-16 aspect-h-9 w-full h-full">
               <iframe
                 className="w-full h-full"
@@ -89,8 +89,9 @@ const AboutMe = () => {
                 allowFullScreen
               ></iframe>
             </div>
-          </div>
-          <div className='w-full h-fit md:h-full md:w-1/2 flex justify-center items-center' style={{ backgroundColor: "#f1f1f1" }}>
+          </div> */}
+          {/* <div className='w-full h-fit md:h-full md:w-1/2 flex justify-center items-center' style={{ backgroundColor: "#f1f1f1" }}> */}
+          <div className='w-full h-fit md:h-full md:w-full flex justify-center items-center' style={{ backgroundColor: "#f1f1f1" }}>
             <div className="w-full p-8 text-center leading-7">
               {/* Introduction Section (Right Side) */}
               <h1 className="md:text-5xl font-semibold font-titl mb-4">Introduction</h1>
