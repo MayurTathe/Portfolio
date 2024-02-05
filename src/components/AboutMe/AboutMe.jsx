@@ -132,7 +132,7 @@ const AboutMe = () => {
                 <ul className='list-disc leading-5'>
                   <li>Node Js</li>
                   <li>Type Script</li>
-                  <li>Java</li>
+                  <li>Core Java</li>
                   <li>Spring Boot</li>
                 </ul>
               </RevealScroll>
