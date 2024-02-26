@@ -11,9 +11,9 @@ export const projects = [
     id: 2,
     title: 'Portfolio',
     description: 'Self designed and developed a responsive Portfolio form Scratch. Used Farmer Motion and Tailwind CSS. New Technology Learned: Farmer Motion.',
-    image: 'EMS-R.png',
+    image: 'Portfolio.png',
     color: '#164863',
-    projectUrl: ""
+    projectUrl: "https://github.com/MayurTathe/Portfolio"
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ export const projects = [
     id: 4,
     title: 'Angular CRUD',
     description: 'Developed a Full-Stack CRUD operation Project using Angular (as Frontend). Used Spring Boot (as Backend), MySQL (Database).',
-    image: 'EMS-R.png',
+    image: 'EMS-A.png',
     color: '#D0E7D2',
     projectUrl: 'https://github.com/MayurTathe/AngularCrud_Frontend'
   },
