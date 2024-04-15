@@ -4,7 +4,7 @@
 
 ## Technologies Used:
 
-#### <p>React,<br>Tailwind CSS, (faster and without implementing CSS file)<br>Material UI, (for icons)<br>Farmer Motion, (for animations)<br></p>
+#### <p>React Vite,<br>FireBase, (faster and without implementing CSS file)<br>Material UI, (for icons)<br>Farmer Motion, (for animations)<br></p>
 
 ## What new things have I Learned?
 
